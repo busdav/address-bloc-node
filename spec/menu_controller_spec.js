@@ -13,10 +13,4 @@ describe('MenuController', () => {
       expect(this.menu.getContactCount()).toBe(1);
     });
   });
-  describe('#remindMe()', () => {
-    it('should return "Learning is a life-long pursuit"', () => {
-      spyOn(console, 'log');
-      this.menu.remindMe();
-      expect(console.log).toHaveBeenCalledWith('Learning is a life-long pursuit');
-  });
 });
