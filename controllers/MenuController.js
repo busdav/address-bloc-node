@@ -13,6 +13,7 @@ module.exports = class MenuController {
         ],
       },
     ];
+    this.contacts = [];
   }
 
   main() {
@@ -48,5 +49,9 @@ module.exports = class MenuController {
   exit() {
     console.log('Thanks for using Address Bloc');
     process.exit();
+  }
+
+  getContactCount() {
+    return this.contacts.length;
   }
 };
